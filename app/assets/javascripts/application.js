@@ -19,7 +19,7 @@
 //= require custom.isotop
 //= require enscroll-0.6.2.min
 //= require functions
-//= require gmap.script
+
 //= require isotope.pkgd.min
 //= require jquery.flexslider
 //= require jquery.nstSlider.min
@@ -27,5 +27,16 @@
 //= require masonry
 //= require swiper.min
 //= require TimeCircles
+//= require cable
+//= require jquery.revslider-missionfuel
+//= require jquery.revslider.embed
+//= require jquery.themepunch.enablelog
+//= require jquery.themepunch.tools.min
+//= require jquery.themepunch.revolution.min
+
+//= require jquery.ui.touch-punch.min
+//= require home.slider
 //= require modernizr-2.8.3.min
+
+
 //= require_tree .

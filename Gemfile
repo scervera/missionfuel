@@ -34,7 +34,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+#gem 'capistrano-rails', group: :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -48,6 +48,9 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'capistrano', '~> 3.6'
+  gem 'capistrano-rails', '~> 1.2'
+  
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -61,6 +64,8 @@ gem 'ranked-model'
 gem 'bootstrap-sass'
 # Fontawesome Toolkit  https://github.com/bokmann/font-awesome-rails
 gem "font-awesome-rails"
+# https://github.com/FortAwesome/font-awesome-sass
+gem 'font-awesome-sass', '~> 4.7.0'
 # https://github.com/plataformatec/devise
 gem 'devise'
 gem 'pundit'

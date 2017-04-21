@@ -1,12 +1,23 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "font-awesome.min";
+@import "font-awesome";
 @import "jquery.nstSlider";
 @import "lightcase";
 @import "normalize";
 @import "responsive";
 @import "style";
 @import "swiper.min";
+@import "tp-color-picker.scss";
+@import "layers";
+@import "navigation";
+@import "pe-icon-7-stroke";
+@import "helper";
+@import "settings-source";
+@import "settings";
+@import "missionfuel_slider";
+@import "gyges";
+
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
