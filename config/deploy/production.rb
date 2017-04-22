@@ -15,7 +15,7 @@ role :db,  %w{adm1n@web.cerveraweb.com}
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server 'web.cerveraweb.com', user: 'adm1n', roles: %w{web app db}
+server 'staging.cerveraweb.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
 
 # Custom SSH Options
 # ==================

@@ -2,16 +2,16 @@
 lock '>=3.3.5'
 
 
-set :application, 'mdn3app'
+set :application, 'missionfuel'
 
-set :repo_url, 'https://git@github.com:scervera/missionfuel.git'
+set :repo_url, 'git@github.com:scervera/missionfuel.git'
 #set :repo_url, 'ssh://quark.cerveraweb.com/git/mdn2.git'
 #set :repo_url, 'ssh://quark.cerveraweb.com:/Library/Server/Xcode/Repositories/git/mdn2.git'
 #set :repo_url, 'https://adm1n:redeemed1@quark.cerveraweb.com:/Library/Server/Xcode/Repositories/git/mdn2.git'
 #set :git_https_username, 'adm1n'
 #set :git_https_password, 'redeemed1'
 set :ssh_options, { :forward_agent => true }
-
+#set :ssh_options, { :forward_agent => false }
 
 # Default branch is :master
 set :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
@@ -19,8 +19,6 @@ set :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 # Default deploy_to directory is /var/www/my_app
 set :deploy_to, '/var/www/missionfuel'
 set :keep_releases, 5
-# Default value for :scm is :git
-set :scm, :git
 
 # Set the rails environment to production
 set :rails_env, 'production'
@@ -56,9 +54,8 @@ set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/sys
 set :keep_releases, 5
 
 # capistrano-rvm
-# set :rvm_type, :user                     # Defaults to: :auto
-#set :rvm_ruby_version, 'ruby-2.0.0-p353@mdn_app' # Defaults to: 'default'
-
+#set :rvm_type, :system                     # Defaults to: :auto
+#set :rvm_ruby_version, '2.3.4-p310'
 
 namespace :deploy do
 
