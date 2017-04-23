@@ -77,3 +77,4 @@ gem "mini_magick"
 gem 'will_paginate'
 # http://simple-form.plataformatec.com.br
 gem 'simple_form'
+gem 'mysql2'
