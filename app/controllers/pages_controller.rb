@@ -16,4 +16,13 @@ class PagesController < ApplicationController
   	@breadcrumb_title = "About Us"
   	@page_title = "Vision and Mission"
   end
+
+  def vision
+  	@breadcrumb_title = "About Us"
+  	@page_title = "Contact Us"
+  end
+
+  def mailinglist
+  	
+  end
 end

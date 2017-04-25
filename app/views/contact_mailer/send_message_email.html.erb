@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    <%= stylesheet_link_tag  'application', media: 'all', debug: true %>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row primary-header"></div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>We have received a message from a visitor to our website named: <%= @visitor.first_name %> <%= @visitor.last_name %></h1>
+          </br>
+          </br>
+          <p>
+            Please read the message below and provide a prompt response if requested and appropriate to do so:<br>
+          </p>
+          Begin Message ***********************************************************************************
+          <p><%= @visitor.comment %></p>
+          <p><b>From:</b> <%= @visitor.first_name %> <%= @visitor.last_name %></p>
+          <p><b>Email:</b> <%= @visitor.email %></p>
+          End Message *************************************************************************************
+          </br>
+          </br>
+          <%= image_tag attachments['mission-fuel-logo-sm.png'].url %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

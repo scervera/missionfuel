@@ -1,0 +1,20 @@
+
+<%= simple_form_for(@visitor, html: {class: "comment-form", role: "form"}) do |f| %>
+<!-- <form role="form" > -->
+<div class="row">
+  <div class="col-sm-4 col-xs-12">
+    <%= f.input :first_name, input_html: { class: 'input', id: 'first_name', placeholder: 'First Name' }%>
+  </div>
+  <div class="col-sm-4 col-xs-12">
+    <%= f.input :last_name, input_html: { class: 'input', id: 'last_name', placeholder: 'Last Name' }%>
+  </div>
+  <div class="col-sm-4 col-xs-12">
+    <%= f.input :email, input_html: { class: 'input', id: 'email', placeholder: 'Email' }%>
+  </div>
+</div>
+    <%= f.input :comment, label: 'Comment', input_html: { class: 'input', id: 'comment', rows: '7', placeholder: "Comment" }%>
+  <div class="col-sm-4 col-xs-12">
+    <%= f.button :submit, "Send Comment", input_html: { class: 'btn btn-default', id: 'Send Comment' } %>
+  </div>
+
+<% end %>
