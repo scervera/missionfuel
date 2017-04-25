@@ -69,7 +69,7 @@ gem 'bootstrap-sass'
 # Fontawesome Toolkit  https://github.com/bokmann/font-awesome-rails
 gem "font-awesome-rails"
 # https://github.com/FortAwesome/font-awesome-sass
-gem 'font-awesome-sass', '~> 4.7.0'
+#gem 'font-awesome-sass', '~> 4.7.0'
 # https://github.com/plataformatec/devise
 gem 'devise'
 gem 'pundit'
@@ -78,3 +78,6 @@ gem 'will_paginate'
 # http://simple-form.plataformatec.com.br
 gem 'simple_form'
 gem 'mysql2'
+#https://github.com/Mange/roadie-rails
+gem 'roadie-rails', '~> 1.0'
+gem 'carrierwave', '~> 1.0'
