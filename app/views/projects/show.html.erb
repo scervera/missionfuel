@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @project.name %>
+</p>
+<p>
+  <strong>Name:</strong>
+  <%= @project.description %>
+</p>
+<p>
+  <strong>Cause:</strong>
+  <%= @project.cause.name %>
+</p>
+
+<p><strong>Photo Galleries:</strong></p>
+<p>
+<% @project.galleries.each do |gallery| %>
+      <%= gallery.name %>
+      <%= link_to 'View Photo Gallery', gallery_path(gallery) %>
+<% end %>
+</p>
+</br>
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %> |
+<%= link_to 'Create Photo Gallery', new_project_gallery_path(@project) %>

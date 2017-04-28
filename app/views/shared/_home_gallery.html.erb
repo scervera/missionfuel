@@ -1,0 +1,39 @@
+<section class="gallery-section section">
+    <div class="container">
+        <div class="row">
+            <div class="section-heading">
+                <span class="flaticon-solidarity"></span>
+                <h3>Our Photo Gallery</h3>
+                <p>Take a look at the images of some of the things that we've supported with generous donations from our partners. Please join us.</p>
+            </div>                    
+        </div>
+        <div class="row">
+            <div class="gallery">
+				<!-- <div class="gallery-menu">
+					<ul>
+						<li class="is_selected" data-filter="*">All</li>
+						<li data-filter=".charity">Charity</li>
+						<li data-filter=".health">Health</li>
+						<li data-filter=".food">Food</li>
+						<li data-filter=".education">Education</li>
+						<li data-filter=".childreen">Childreen</li>
+					</ul>							
+				</div> -->
+				<div class="all-gallery-items">
+					<% @gallery.photos.each do |photo| %>
+						<div class="single-item">
+	                         <div class="gallery-img">
+	                             <%= image_tag(photo.url(:medium)) %>
+	                             <div class="overlay"></div>
+	                             <div class="gallery-content">
+	                                 <%= link_to '<i class="fa fa-expand" aria-hidden="true"></i>'.html_safe, photo.url, data: { rel: "lightcase:myCollection" } %>
+	                                 <!-- <h4><%#= link_to 'Photo Link', photo.url %></h4> -->
+	                             </div>                                     
+	                         </div>
+	                    </div>   
+					<% end %>
+                </div>                      
+            </div>
+        </div>		        
+    </div>
+</section> 

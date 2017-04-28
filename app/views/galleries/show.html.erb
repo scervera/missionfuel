@@ -1,0 +1,26 @@
+<p>
+  <strong>Name:</strong>
+  <%= @gallery.name %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @gallery.description %>
+</p>
+<p>
+  <strong>Cause:</strong>
+  <%= @gallery.project.cause.name %>
+</p>
+<p>
+  <strong>Project:</strong>
+  <%= @gallery.project.name %>
+</p>
+
+<p><strong>Photo:</strong></p>
+<table>
+	<% @gallery.photos.each do |photo| %>
+	      <tr> <%= link_to( image_tag(photo.url(:thumb)), photo.url) %> </tr>    
+	<% end %>
+</table>
+
+<%= link_to 'Edit', edit_gallery_path(@gallery) %> |
+<%= link_to 'Back', galleries_path %>
