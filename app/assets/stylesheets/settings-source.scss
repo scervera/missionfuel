@@ -70,11 +70,11 @@ website:   	http://www.themepunch.com
 .rtl {	direction: rtl;}
 @font-face {
   font-family: 'revicons';
-  src: url('../fonts/revicons/revicons.eot');
-  src: url('../fonts/revicons/revicons.eot#iefix') format('embedded-opentype'),
-       url('../fonts/revicons/revicons.woff') format('woff'),
-       url('../fonts/revicons/revicons.ttf') format('truetype'),
-       url('../fonts/revicons/revicons.svg#revicons') format('svg');
+  src: font-url('revicons/revicons.eot');
+  src: font-url('revicons/revicons.eot#iefix') format('embedded-opentype'),
+       font-url('revicons/revicons.woff') format('woff'),
+       font-url('revicons/revicons.ttf') format('truetype'),
+       font-url('revicons/revicons.svg#revicons') format('svg');
   font-weight: normal;
   font-style: normal;
 }

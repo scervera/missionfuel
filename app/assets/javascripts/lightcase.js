@@ -47,7 +47,7 @@
 				idPrefix: 'lightcase-',
 				classPrefix: 'lightcase-',
 				attrPrefix: 'lc-',
-				transition: 'elastic',
+				transition: 'scrollHorizontal',
 				transitionIn: null,
 				transitionOut: null,
 				cssTransitions: true,
