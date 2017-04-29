@@ -21,4 +21,7 @@
 .byebug_history
 config/secrets.yml
 
+#Ignore file uploads
+/public/system/*
+
 
