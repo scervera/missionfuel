@@ -65,8 +65,8 @@ Rails.application.configure do
   port:                 25,
   # user_name: ENV["MISSIONFUEL_EMAIL_USERNAME"],
   # password: ENV["MISSIONFUEL_EMAIL_PASSWORD"],
-  user_name: 'info@missionfuel.net'
-  password: 'temporary123'
+  user_name: 'info@missionfuel.net',
+  password: 'temporary123',
   authentication:       'login',
   openssl_verify_mode:  'none',
   enable_starttls_auto: false 
