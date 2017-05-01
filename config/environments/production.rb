@@ -63,8 +63,8 @@ Rails.application.configure do
   address:              'smtpout.secureserver.net',
   domain:               'missionfuel.net',
   port:                 25,
-  user_name: ENV["MISSIONFUEL_EMAIL_USERNAME"],
-  password: ENV["MISSIONFUEL_EMAIL_PASSWORD"],
+  user_name:            ENV["MISSIONFUEL_EMAIL_USERNAME"],
+  password:             ENV["MISSIONFUEL_EMAIL_PASSWORD"],
   authentication:       'login',
   openssl_verify_mode:  'none',
   enable_starttls_auto: false 

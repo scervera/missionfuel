@@ -81,3 +81,5 @@ gem 'mysql2'
 #https://github.com/Mange/roadie-rails
 gem 'roadie-rails', '~> 1.0'
 gem 'carrierwave', '~> 1.0'
+#https://github.com/laserlemon/figaro
+gem 'figaro'
