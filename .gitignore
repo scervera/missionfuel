@@ -23,5 +23,6 @@ config/secrets.yml
 
 #Ignore file uploads
 /public/system/*
+env_variables
 
 
