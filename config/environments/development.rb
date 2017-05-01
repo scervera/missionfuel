@@ -53,5 +53,20 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   # SC added configurations
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  # config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  # config.action_mailer.delivery_method = :smtp
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.perform_deliveries = true 
+  config.action_mailer.smtp_settings = {
+  address:              'smtpout.secureserver.net',
+  domain:               'missionfuel.net',
+  port:                 25,
+  user_name:            'info@missionfuel.net',
+  password:             'revelation320!',
+  authentication:       'login',
+  openssl_verify_mode:  'none',
+  enable_starttls_auto: false 
+  }
+
 end

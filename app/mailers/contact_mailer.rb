@@ -1,7 +1,7 @@
 class ContactMailer < ApplicationMailer
-  include Roadie::Rails::Automatic
+  #include Roadie::Rails::Automatic
 
-  # default :from => "info@missionfuel.net"
+  default from: 'info@missionfuel.net'
 
   def message_email(visitor)
   	attachments.inline['mission-fuel-logo-sm.png'] = File.read('app/assets/images/graphics/mission-fuel-logo-sm.png')
