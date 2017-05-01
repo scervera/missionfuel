@@ -26,3 +26,6 @@ config/secrets.yml
 env_variables
 
 
+
+# Ignore application configuration
+/config/application.yml
