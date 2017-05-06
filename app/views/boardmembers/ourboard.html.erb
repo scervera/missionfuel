@@ -1,0 +1,33 @@
+<%= render "shared/breadcrumbs" %>
+
+<section class="section all-team-member p-90">
+    <div class="container">
+        <div class="row">
+            <% unless @boardmembers.nil? %>
+                <% @boardmembers.each do |boardmember| %>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-member">
+                        <div class="member-image">
+                            <%=image_tag boardmember.avatar.url(:small) %>
+                        </div>
+                        <div class="member-info">
+                            <%= link_to(boardmember) do %>
+                              <h4><%= boardmember.title %> <%= boardmember.firstname %> <%= boardmember.lastname %></h4>
+                            <% end %>
+                            
+                            <h5><%= boardmember.office %></h5>
+                        </div>
+                        <!-- <div class="member-social-link">
+                            <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+                            <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+                            <a href="#" class="fa fa-google-plus" aria-hidden="true"></a>
+                            <a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+                            <a href="#" class="fa fa-behance" aria-hidden="true"></a>
+                        </div>  -->                           
+                    </div>
+                </div>
+                <% end %>
+            <% end %>
+        </div>
+    </div>
+</section> 

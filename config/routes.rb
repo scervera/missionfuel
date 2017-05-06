@@ -2,6 +2,12 @@ Rails.application.routes.draw do
 
   
 
+  resources :boardmembers do
+    get 'ourboard', :on => :collection
+    get 'bio', :on => :collection
+  end
+  match "ourboard" => "boardmembers#ourboard", via: :get
+
   resources :causes do
     resources :projects
   end

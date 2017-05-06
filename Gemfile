@@ -81,5 +81,10 @@ gem 'mysql2'
 #https://github.com/Mange/roadie-rails
 gem 'roadie-rails', '~> 1.0'
 gem 'carrierwave', '~> 1.0'
+gem "fog-aws"
 #https://github.com/laserlemon/figaro
 gem 'figaro'
+#https://github.com/nikmarchenko/swiper-rails
+gem 'swiper-rails'
+#https://github.com/norman/friendly_id
+gem 'friendly_id', '~> 5.1.0'

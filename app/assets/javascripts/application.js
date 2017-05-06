@@ -18,14 +18,14 @@
 //= require circle.progress
 //= require custom.isotop
 //= require enscroll-0.6.2.min
-//= require functions
+
 
 //= require isotope.pkgd.min
 //= require jquery.flexslider
 //= require jquery.nstSlider.min
 //= require lightcase
 //= require masonry
-//= require swiper.min
+//= require swiper
 //= require TimeCircles
 //= require cable
 //= require jquery.revslider-missionfuel
@@ -36,6 +36,7 @@
 
 //= require jquery.ui.touch-punch.min
 //= require home.slider
+//= require functions
 //= require modernizr-2.8.3.min
 
 

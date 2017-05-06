@@ -8,8 +8,7 @@ class PagesController < ApplicationController
   end
 
   def board
-  	@breadcrumb_title = "About Us"
-  	@page_title = "Board of Directors"
+
   end
 
   def vision
@@ -25,4 +24,6 @@ class PagesController < ApplicationController
   def mailinglist
   	
   end
+
+  
 end

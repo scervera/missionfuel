@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<section class="section team-single">
+    <div class="container">
+        <div class="row">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <div class="team-member-full-img">
+                        <!-- <img src="images/member-full-pic.jpg" alt="Image Name"> -->
+                        <%= image_tag(@boardmember.avatar.url(:large)) %>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="member-details">
+                        <h3><%= @boardmember.title %> <%= @boardmember.firstname %> <%= @boardmember.lastname %></h3>
+                        <% unless @boardmember.office.nil? %>
+                         <h5><%= @boardmember.office %></h5>
+                        <% end %>
+                        <p><%= @boardmember.biography %></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+
+<% if user_signed_in? %>
+	<%= link_to 'Edit', edit_boardmember_path(@boardmember) %> |
+	<%= link_to 'Back', boardmembers_path %>
+<% end %>
