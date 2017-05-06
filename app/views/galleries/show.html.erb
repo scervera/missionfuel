@@ -1,26 +1,44 @@
-<p>
-  <strong>Name:</strong>
-  <%= @gallery.name %>
-</p>
-<p>
-  <strong>Description:</strong>
-  <%= @gallery.description %>
-</p>
-<p>
-  <strong>Cause:</strong>
-  <%= @gallery.project.cause.name %>
-</p>
-<p>
-  <strong>Project:</strong>
-  <%= @gallery.project.name %>
-</p>
+<section class="gallery-section section">
+    <div class="container">
+        <div class="row">
+            <div class="section-heading">
+                <span class="flaticon-solidarity"></span>
+                <h3><%= @gallery.name %> Photo Gallery</h3>
+                <p><%= @gallery.description %></p>
+            </div>                    
+        </div>
+        <div class="row">
+            <div class="gallery">
+        <!-- <div class="gallery-menu">
+          <ul>
+            <li class="is_selected" data-filter="*">All</li>
+            <li data-filter=".charity">Charity</li>
+            <li data-filter=".health">Health</li>
+            <li data-filter=".food">Food</li>
+            <li data-filter=".education">Education</li>
+            <li data-filter=".childreen">Childreen</li>
+          </ul>             
+        </div> -->
+        <div class="all-gallery-items">
+          <% @gallery.photos.each do |photo| %>
+            <div class="single-item">
+                           <div class="gallery-img">
+                               <%= image_tag(photo.url(:medium)) %>
+                               <div class="overlay"></div>
+                               <div class="gallery-content">
+                                   <%= link_to '<i class="fa fa-expand" aria-hidden="true"></i>'.html_safe, photo.url, data: { rel: "lightcase:myCollection" } %>
+                               </div>                                     
+                           </div>
+                      </div>   
+          <% end %>
+                </div>                      
+            </div>
+        </div>            
+    </div>
+</section> 
 
-<p><strong>Photo:</strong></p>
-<table>
-	<% @gallery.photos.each do |photo| %>
-	      <tr> <%= link_to( image_tag(photo.url(:thumb)), photo.url) %> </tr>    
-	<% end %>
-</table>
 
+<% if user_signed_in? %>
 <%= link_to 'Edit', edit_gallery_path(@gallery) %> |
 <%= link_to 'Back', galleries_path %>
+<% end %>

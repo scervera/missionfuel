@@ -1,29 +1,42 @@
-<p id="notice"><%= notice %></p>
+             
+    <!-- Gallery Section -->
+    <section class="gallery-section-two section">
+        <div class="container">
+                <div class="row">
+                    <div class="gallery">
+            <!-- <div class="gallery-menu">
+              <ul>
+                <li class="is_selected" data-filter="*">All</li>
+                <li data-filter=".charity">Charity</li>
+                <li data-filter=".health">Health</li>
+                <li data-filter=".food">Food</li>
+                <li data-filter=".education">Education</li>
+                <li data-filter=".childreen">Childreen</li>
+              </ul>             
+            </div> -->
 
-<h1>Galleries</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Project</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @galleries.each do |gallery| %>
-      <tr>
-        <td><%= gallery.name %></td>
-        <td><%= gallery.project.name %></td>
-        <td><%= link_to 'Show', gallery %></td>
-        <td><%= link_to 'Edit', edit_gallery_path(gallery) %></td>
-        <td><%= link_to 'Destroy', gallery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Gallery', new_gallery_path %>
+            <% @galleries.each do |gallery| %>
+                         <div class="gallery-grid-4">
+                             <div class="single-item-4 col-md-3 col-sm-6">
+                                 <div class="gallery-img">
+                                    <% unless gallery.photos.empty? %>
+                                      <%= image_tag(gallery.photos.first.url(:medium)) %>
+                                    <% end %>
+                                     <div class="overlay"></div>
+                                     <div class="gallery-content">
+                                        <%= link_to(gallery) do %>
+                                          <h4><%= gallery.name %></h4>
+                                        <% end %>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>                      
+                    </div>
+                </div> 
+            <% end %>           
+        </div>
+    </section>      
+    <!-- End Gallery Section --> 
+<% if user_signed_in? %>
+    <%= link_to 'New Gallery', new_gallery_path %>
+<% end %>
