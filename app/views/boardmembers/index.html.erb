@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Boardmembers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Biography</th>
+      <th>Office</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @boardmembers.each do |boardmember| %>
+      <tr>
+        <td><%= boardmember.firstname %></td>
+        <td><%= boardmember.lastname %></td>
+        <td><%= boardmember.biography %></td>
+        <td><%= boardmember.office %></td>
+        <td><%= link_to 'Show', boardmember %></td>
+        <td><%= link_to 'Edit', edit_boardmember_path(boardmember) %></td>
+        <td><%= link_to 'Destroy', boardmember, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Boardmember', new_boardmember_path %>
