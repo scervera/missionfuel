@@ -9,5 +9,7 @@
   <%= @cause.description %>
 </p>
 
-<%= link_to 'Edit', edit_cause_path(@cause) %> |
-<%= link_to 'Back', causes_path %>
+<% if user_signed_in? %>
+	<%= link_to 'Edit', edit_cause_path(@cause) %> |
+	<%= link_to 'Back', causes_path %>
+<% end %>

@@ -116,7 +116,7 @@
                                     <li class="dropdown">
                                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Gallery</span></a>
                                       <ul class="dropdown-menu">
-                                        <li><a href="gallery_page_one.html">Photo Gallery</a></li>
+                                        <li><a href="/galleries">Photo Galleries</a></li>
                                         <!-- <li><a href="gallery_page_three.html">Gallery 03 Grid</a></li>
                                         <li><a href="gallery_page_two.html">Gallery 04 Grid</a></li>
                                         <li><a href="gallery_page_four.html">Gallery 05 Grid</a></li> -->
@@ -132,6 +132,12 @@
                                       </ul>
                                     </li> -->
                                     <li><a href="/contact_us"><span>Contact</span></a></li>
+                                    <% if user_signed_in? %>
+                                      <li>
+                                        <%= render 'devise/menu/login_items' %>
+                                      </li>
+                                    <% end %>
+                                    
                                   </ul>
                                 </div><!-- /.navbar-collapse -->
                             </nav>
