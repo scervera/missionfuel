@@ -18,7 +18,7 @@
 //= require circle.progress
 //= require custom.isotop
 //= require enscroll-0.6.2.min
-
+//= require navbar
 
 //= require isotope.pkgd.min
 //= require jquery.flexslider
@@ -37,7 +37,6 @@
 
 //= require jquery.ui.touch-punch.min
 //= require home.slider
-//= require _navbar
 //= require modernizr-2.8.3.min
 
 
