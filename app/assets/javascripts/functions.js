@@ -1,63 +1,63 @@
 (function($){
     'use strict';
-        $(document).ready(function() {
+		$(document).ready(function() {
             
-            //Js code for Header Top 
-            var $menu_fixed = $("#menu-fixed"),
-            $clone = $menu_fixed.after($menu_fixed.clone().addClass("clone"));
-            $(window).on("scroll", function() {
-                var fromTop = $(window).scrollTop();
-                $("body").toggleClass("down", (fromTop > 185));
-            });
+			//Js code for Header Top 
+			var $menu_fixed = $("#menu-fixed"),
+			$clone = $menu_fixed.after($menu_fixed.clone().addClass("clone"));
+			$(window).on("scroll", function() {
+				var fromTop = $(window).scrollTop();
+				$("body").toggleClass("down", (fromTop > 185));
+			});
 
+			
+			//Js code for Responsive multiple Munu 
+			$('.dropdown>.dropdown-menu>.dropdown a.dropdown-toggle').on('click', function(e) {
+				var $el = $(this);
+				var $parent = $(this).offsetParent(".dropdown-menu");
+				$(this).parent("li").toggleClass('open');
+
+				$('.nav li.open').not($(this).parents("li")).removeClass("open");
+
+				return false;
+			});
+
+			//js for Light Menu Style
+			if($("header").attr("id") == "header-style-two")
+			{
+						function sticky_relocate() {
+							var window_top = $(window).scrollTop();
+							var div_top = $('#sticky-anchor').offset().top;
+							if (window_top > div_top) {
+								$('.mainmenu-area').removeClass('light-menu');
+								//This is for when div in top	
+
+
+								  
+							} else {
+								$('.mainmenu-area').addClass('light-menu');
+								//This is for when div in not top
+							}
+						}
+
+						$(function () {
+							$(window).scroll(sticky_relocate);
+							sticky_relocate();
+						});	
+			}            
             
-            //Js code for Responsive multiple Munu 
-            $('.dropdown>.dropdown-menu>.dropdown a.dropdown-toggle').on('click', function(e) {
-                var $el = $(this);
-                var $parent = $(this).offsetParent(".dropdown-menu");
-                $(this).parent("li").toggleClass('open');
-
-                $('.nav li.open').not($(this).parents("li")).removeClass("open");
-
-                return false;
-            });
-
-            //js for Light Menu Style
-            if($("header").attr("id") == "header-style-two")
-            {
-                        function sticky_relocate() {
-                            var window_top = $(window).scrollTop();
-                            var div_top = $('#sticky-anchor').offset().top;
-                            if (window_top > div_top) {
-                                $('.mainmenu-area').removeClass('light-menu');
-                                //This is for when div in top   
-
-
-                                  
-                            } else {
-                                $('.mainmenu-area').addClass('light-menu');
-                                //This is for when div in not top
-                            }
-                        }
-
-                        $(function () {
-                            $(window).scroll(sticky_relocate);
-                            sticky_relocate();
-                        }); 
-            }            
-            
-            //Js code for search box 
-            $(".first_click").click(function(){
-                $(".first_click").hide();
-                $(".second_click").css('display','block');
-                $(".mainmenu-area").addClass("search_box");  
-            });
-            $(".second_click").click(function(){
-                $(".second_click").hide();
-                $(".first_click").css('display','block');
-                $(".mainmenu-area").removeClass("search_box"); 
-            });     
-        
+			//Js code for search box 
+			$(".first_click").click(function(){
+				$(".first_click").hide();
+				$(".second_click").css('display','block');
+				$(".mainmenu-area").addClass("search_box");	 
+			});
+			$(".second_click").click(function(){
+				$(".second_click").hide();
+				$(".first_click").css('display','block');
+				$(".mainmenu-area").removeClass("search_box"); 
+			});		
+		
             // Payment Method Select Ammount Js
             $('.fixed-ammount').each(function (i, liList) {
                 var $ammount = $(liList);
@@ -95,7 +95,7 @@
                             animation: {
                               duration: 2000,
                               easing: 'easeOutBounce' // Default circleProgressEasing . You can also use jquery Easeing another Effect
-                            },                  
+                            },					
                         }).on('circle-animation-progress', function (event, progress, stepValue) {
                             $(this).find('div').text((stepValue*100).toFixed(0) + "%");
                         }).stop();
@@ -106,7 +106,7 @@
             animateElements();
             $(window).scroll(animateElements);
             
-            // swiper plugin Testimonial Onwe active.   
+            // swiper plugin Testimonial Onwe active.	
             var swiper = new Swiper('.swiper-container', {
                 pagination: '.swiper-pagination',
                 paginationClickable: true,
@@ -115,7 +115,7 @@
                 loop: true
             });
 
-            // swiper plugin Logo Section active.   
+            // swiper plugin Logo Section active.	
             var swiper = new Swiper('.swiper-container-two', {
                 slidesPerView: 4,
                 paginationClickable: false,
@@ -208,9 +208,9 @@
               });
             });
             
-        });
-})(jQuery);   
+		});
+})(jQuery);	  
 
-    
+	
 
 

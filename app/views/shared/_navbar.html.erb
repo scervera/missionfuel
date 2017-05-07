@@ -37,66 +37,66 @@
             </div>
         </div>
     </div>
-		<div class="mainmenu-area" id="menu-fixed">
-			<div class="container">
-				<div class="row">
-					<a href="/" class="logo-menu"><%= image_tag "graphics/mission-fuel-logo-md-wht.png", alt: "Image Name" %></a>
-					<div class="nav-menu">
-            <nav class="navbar navbar-default">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar-one bar-stick"></span>
-                    <span class="icon-bar-two bar-stick"></span>
-                    <span class="icon-bar-three bar-stick"></span>
-                  </button>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                    <li class="active">
-                      <a href="/" ><span>Home</span></a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>About Us</span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="/beliefs">Beliefs</a></li>
-                        <li><a href="/vision">Vision and Mission</a></li>
-                        <li><a href="/ourboard">Board of Directors</a></li>
-                        <li><a href="/contact_us">Contact Us</a></li>
-                      </ul>
-                    </li>											
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Gallery</span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="/galleries">Photo Galleries</a></li>
-                        <!-- <li><a href="gallery_page_three.html">Gallery 03 Grid</a></li>
-                        <li><a href="gallery_page_two.html">Gallery 04 Grid</a></li>
-                        <li><a href="gallery_page_four.html">Gallery 05 Grid</a></li> -->
-                      </ul>
-                    </li>				
-                    <li><a href="/contact_us"><span>Contact</span></a></li>
-                    <% if user_signed_in? %>
-                      <li>
-                        <%= render 'devise/menu/login_items' %>
-                      </li>
-                    <% end %>
-                  </ul>
-                </div><!-- /.navbar-collapse -->
-            </nav>
-					</div>
-					<div class="mainmenu-right">
-            <div class="donation">
-                 <a href="https://app.missionfuel.net/secure/donate">Donate Now <i class="fa fa-heart" aria-hidden="true"></i></a>
+	<div class="mainmenu-area" id="menu-fixed">
+		<div class="container">
+			<div class="row">
+				<a href="/" class="logo-menu"><%= image_tag "graphics/mission-fuel-logo-md-wht.png", alt: "Image Name" %></a>
+				<div class="nav-menu">
+        <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar-one bar-stick"></span>
+                <span class="icon-bar-two bar-stick"></span>
+                <span class="icon-bar-three bar-stick"></span>
+              </button>
             </div>
-					</div>													
-					<!-- <div class="search-box-text">
-						<form action="#">
-							<input type="text" name="search" id="all-search" placeholder="Search Here"/>
-						</form>
-					</div> -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="">
+                  <a href="/" ><span>Home</span></a>
+                </li>
+                <li class="dropdown active">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>About Us</span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/beliefs">Beliefs</a></li>
+                    <li><a href="/vision">Vision and Mission</a></li>
+                    <li><a href="/ourboard">Board of Directors</a></li>
+                    <li><a href="/contact_us">Contact Us</a></li>
+                  </ul>
+                </li>											
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Gallery</span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/galleries">Photo Galleries</a></li>
+                    <!-- <li><a href="gallery_page_three.html">Gallery 03 Grid</a></li>
+                    <li><a href="gallery_page_two.html">Gallery 04 Grid</a></li>
+                    <li><a href="gallery_page_four.html">Gallery 05 Grid</a></li> -->
+                  </ul>
+                </li>				
+                <li><a href="/contact_us"><span>Contact</span></a></li>
+                <% if user_signed_in? %>
+                  <li>
+                    <%= render 'devise/menu/login_items' %>
+                  </li>
+                <% end %>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
 				</div>
+				<div class="mainmenu-right">
+        <div class="donation">
+             <a href="https://app.missionfuel.net/secure/donate">Donate Now <i class="fa fa-heart" aria-hidden="true"></i></a>
+        </div>
+				</div>													
+				<!-- <div class="search-box-text">
+					<form action="#">
+						<input type="text" name="search" id="all-search" placeholder="Search Here"/>
+					</form>
+				</div> -->
 			</div>
 		</div>
+	</div>
 </header>

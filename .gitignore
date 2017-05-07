@@ -29,3 +29,6 @@ env_variables
 
 # Ignore application configuration
 /config/application.yml
+
+# Ignore template
+1heaven-hands-v1.0.0
