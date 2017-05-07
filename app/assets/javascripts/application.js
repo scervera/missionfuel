@@ -24,6 +24,7 @@
 //= require jquery.flexslider
 //= require jquery.nstSlider.min
 //= require lightcase
+//= require jquery.event.swipe
 //= require masonry
 //= require swiper
 //= require TimeCircles

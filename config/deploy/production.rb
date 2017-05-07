@@ -4,10 +4,13 @@
 # is considered to be the first unless any hosts have the primary
 # property set.  Don't declare `role :all`, it's a meta role.
 
-role :app, %w{adm1n@web.cerveraweb.com}
-role :web, %w{adm1n@web.cerveraweb.com}
-role :db,  %w{adm1n@web.cerveraweb.com}
+#role :app, %w{deploy@cloud1.cerveraweb.com, deploy@railroad.cerveraweb.com}
+#role :web, %w{deploy@cloud1.cerveraweb.com, deploy@railroad.cerveraweb.com}
+#role :db,  %w{deploy@cloud1.cerveraweb.com, deploy@railroad.cerveraweb.com}
 
+#role :app, %w{deploy@railroad.cerveraweb.com}
+#role :web, %w{deploy@railroad.cerveraweb.com}
+#role :db, %w{deploy@railroad.cerveraweb.com}
 
 # Extended Server Syntax
 # ======================
@@ -15,7 +18,10 @@ role :db,  %w{adm1n@web.cerveraweb.com}
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server 'staging.cerveraweb.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
+server 'www.cerveraweb.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
+# server 'cloud1.cerveraweb.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
+
+
 
 # Custom SSH Options
 # ==================
@@ -24,17 +30,16 @@ server 'staging.cerveraweb.com', user: 'deploy', roles: %w{web app db}, keys: ["
 #
 # Global options
 # --------------
-#  set :ssh_options, {
-#    keys: %w(/Users/scervera/.ssh/id_rsa),
-#    forward_agent: false,
- #   auth_methods: %w(password),
- #   password: 'redeemed1'
- # }
+#set :ssh_options, {
+#     keys: %w(~/.ssh/amazon_ec2_key.pem),
+#     forward_agent: false,
+ #    auth_methods: %w(password publickey)
+#   }
 #
 # And/or per server (overrides global)
 # ------------------------------------
-#server 'example.com',
-#   user: 'username',
+# server 'example.com',
+#   user: 'user_name',
 #   roles: %w{web app},
 #   ssh_options: {
 #     user: 'user_name', # overrides user setting above
