@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
-//= require bootstrap.min
 //= require functions
 //= require circle.progress
 //= require custom.isotop
