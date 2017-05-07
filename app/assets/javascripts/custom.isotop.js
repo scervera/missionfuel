@@ -1,6 +1,6 @@
 			jQuery(window).load(function(){
 			// init Isotope
-					var $gallery_img = $('.all-gallery-items').isotope({
+					var $gellary_img = $('.all-gallery-items').isotope({
 					  itemSelector: '.single-item',
 					  percentPosition: true,
 					  transitionDuration: '0.8s',
@@ -40,11 +40,11 @@
 					  var filterValue = $( this ).attr('data-filter');
 					  // use filterFn if matches value
 					  filterValue = filterFns[ filterValue ] || filterValue;
-					  $gallery_img.isotope({ filter: filterValue });
+					  $gellary_img.isotope({ filter: filterValue });
 					});            
 
 					// Isotop for four grid     
-					var $gallery_img_4 = $('.gallery-grid-4').isotope({
+					var $gellary_img_4 = $('.gallery-grid-4').isotope({
 					  itemSelector: '.single-item-4',
 					  transitionDuration: '0.8s',
 					  getSortData: {
@@ -63,7 +63,7 @@
 					  var filterValue = $( this ).attr('data-filter');
 					  // use filterFn if matches value
 					  filterValue = filterFns[ filterValue ] || filterValue;
-					  $gallery_img_4.isotope({ filter: filterValue });
+					  $gellary_img_4.isotope({ filter: filterValue });
 					});
 					
 					// change is-checked class on buttons
