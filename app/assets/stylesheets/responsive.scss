@@ -44,7 +44,6 @@
         background-color: #fff;
         transform: translateY(0);
         box-shadow: 0px 0px 0px #ddd;
-        // background-image: url(../../images/donation-box.jpg);
         background-image: url(image-path('images/donation-box.jpg'));
         background-repeat: no-repeat;
         background-size: 50% 100%;
@@ -153,6 +152,7 @@
 /*=========max-width: 991px==========*/
 
 @media screen and (max-width: 991px){
+
     .section-heading p {
         width: 58%;
     }  
@@ -451,6 +451,7 @@
     
 }
 
+// SC - Edits here
 /*=========min-width: 768px==========*/
 
 @media screen and (min-width: 768px){
@@ -989,6 +990,9 @@
 /*=========max-width: 480px==========*/
 
 @media screen and (max-width: 480px) {
+    .mainmenu-area a.logo-menu img {
+        width: 60%;
+    }
     .slider-content {
          top: 42%;
     } 
