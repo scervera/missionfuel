@@ -30,8 +30,8 @@ production:
   reconnect: true
   host: localhost
   database: missionfuel
-  username: ENV['DATABASE_USERNAME']
-  password: ENV['DATABASE_PASSWORD']
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /var/run/mysqld/mysqld.sock
   pool: 5
   timeout: 5000
