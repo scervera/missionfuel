@@ -38,8 +38,9 @@
 
 //= require jquery.ui.touch-punch.min
 //= require home.slider
-
+//= require _navbar
 //= require modernizr-2.8.3.min
+
 
 
 //= require_tree .
