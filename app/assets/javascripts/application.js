@@ -27,11 +27,11 @@
 //= require swiper
 //= require TimeCircles
 //= require cable
-//= require jquery.revslider-missionfuel
-//= require jquery.revslider.embed
+//= require jquery.themepunch.revolution.min
 //= require jquery.themepunch.enablelog
 //= require jquery.themepunch.tools.min
-//= require jquery.themepunch.revolution.min
+//= require jquery.revslider-missionfuel
+//= require jquery.revslider.embed
 //= require jquery.ui.touch-punch.min
 //= require home.slider
 //= require functions
