@@ -1,5 +1,5 @@
-$(document).on('turbolinks:load', function($) {
-// (function ($) {
+
+(function ($) {
 
     var options = {
         embedLoaded: true,
