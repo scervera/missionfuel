@@ -37,7 +37,7 @@
 //= require functions
 //= require navbar
 //= require lightcase
-//= require modernizr-2.8.3.min
+
 
 
 //= require_tree .
