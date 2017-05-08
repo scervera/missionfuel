@@ -37,17 +37,6 @@
 //= require functions
 //= require navbar
 //= require lightcase
-
-//require extensions/revolution.extension.actions.min
-//require extensions/revolution.extension.carousel.min
-//require extensions/revolution.extension.kenburn.min
-//require extensions/revolution.extension.layeranimation.min
-//require extensions/revolution.extension.migration.min
-//require extensions/revolution.extension.navigation.min
-//require extensions/revolution.extension.parallax.min
-//require extensions/revolution.extension.slideanims.min
-//require extensions/revolution.extension.video.min
-
 //= require modernizr-2.8.3.min
 
 
