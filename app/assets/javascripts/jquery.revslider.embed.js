@@ -1,4 +1,5 @@
-(function ($) {
+$(document).on('turbolinks:load', function($) {
+// (function ($) {
 
     var options = {
         embedLoaded: true,
@@ -145,3 +146,4 @@
     };
 
 }(jQuery));
+

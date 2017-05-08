@@ -1,5 +1,5 @@
-(function($){
-    "use strict";
+// (function($){
+//     "use strict";
     $(document).ready(function() {
 
         //Js code for Header Top
@@ -205,4 +205,4 @@
             });
             
         });
-})(jQuery);
+// })(jQuery);
