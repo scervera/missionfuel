@@ -11,19 +11,17 @@
 // about supported directives.
 //
 //= require jquery
+
 //= require jquery_ujs
-//= require turbolinks
 //= require bootstrap-sprockets
-//= require functions
+
 //= require circle.progress
 //= require custom.isotop
 //= require enscroll-0.6.2.min
-//= require navbar
-
 //= require isotope.pkgd.min
 //= require jquery.flexslider
 //= require jquery.nstSlider.min
-//= require lightcase
+
 //= require jquery.event.swipe
 //= require masonry
 //= require swiper
@@ -34,11 +32,27 @@
 //= require jquery.themepunch.enablelog
 //= require jquery.themepunch.tools.min
 //= require jquery.themepunch.revolution.min
-
 //= require jquery.ui.touch-punch.min
 //= require home.slider
+//= require functions
+//= require navbar
+//= require lightcase
+
+//require extensions/revolution.extension.actions.min
+//require extensions/revolution.extension.carousel.min
+//require extensions/revolution.extension.kenburn.min
+//require extensions/revolution.extension.layeranimation.min
+//require extensions/revolution.extension.migration.min
+//require extensions/revolution.extension.navigation.min
+//require extensions/revolution.extension.parallax.min
+//require extensions/revolution.extension.slideanims.min
+//require extensions/revolution.extension.video.min
+
 //= require modernizr-2.8.3.min
 
 
-
 //= require_tree .
+
+
+
+
