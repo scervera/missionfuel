@@ -1,9 +1,9 @@
-(function($){
-    "use strict";
+// (function($){
+//     "use strict";
     $(document).ready(function() {
 
         //Js code for Header Top
-        var $menu_fixed = $("#menu-fixed"),
+        var $menu_fixed = $("#menu-fixed");
         $clone = $menu_fixed.after($menu_fixed.clone().addClass("clone"));
         $(window).on("scroll", function() {
             var fromTop = $(window).scrollTop();
@@ -205,4 +205,4 @@
             });
             
         });
-})(jQuery);
+// })(jQuery);
