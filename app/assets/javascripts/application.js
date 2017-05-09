@@ -33,11 +33,11 @@
 //= require jquery.revslider-missionfuel
 //= require jquery.revslider.embed
 //= require jquery.ui.touch-punch.min
-//= require home.slider
 //= require functions
 //= require navbar
 //= require lightcase
-
+//= require home.slider
+//= require modernizr-2.8.3.min
 
 
 //= require_tree .
