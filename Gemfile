@@ -88,3 +88,7 @@ gem 'figaro'
 gem 'swiper-rails'
 #https://github.com/norman/friendly_id
 gem 'friendly_id', '~> 5.1.0'
+# https://github.com/geothird/touchpunch-rails
+gem 'touchpunch-rails'
+# https://github.com/geothird/touchpunch-rails
+gem 'jquery-ui-rails'

@@ -13,6 +13,7 @@
 //= require jquery
 
 //= require jquery_ujs
+//= require jquery-ui
 //= require bootstrap-sprockets
 
 //= require circle.progress
@@ -32,7 +33,7 @@
 //= require jquery.themepunch.tools.min
 //= require jquery.revslider-missionfuel
 //= require jquery.revslider.embed
-//= require jquery.ui.touch-punch.min
+
 //= require functions
 //= require navbar
 //= require lightcase
