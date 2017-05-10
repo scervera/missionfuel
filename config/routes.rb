@@ -31,8 +31,23 @@ Rails.application.routes.draw do
   get 'pages/board'
   match "board" => "pages#board", via: :get
 
+  get 'pages/helpingthepoor'
+  match "helpingthepoor" => "pages#helpingthepoor", via: :get
+
   get 'pages/vision'
   match "vision" => "pages#vision", via: :get
+
+  get 'pages/discipleship'
+  match "discipleship" => "pages#discipleship", via: :get
+
+  get 'pages/women'
+  match "women" => "pages#women", via: :get
+
+  get 'pages/men'
+  match "men" => "pages#men", via: :get
+
+  get 'pages/children'
+  match "children" => "pages#children", via: :get
 
   # get 'pages/contact'
   # match "contact" => "pages#contact", via: :get
