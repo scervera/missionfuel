@@ -56,6 +56,8 @@ group :development do
 end
 
 gem 'rvm1-capistrano3', require: false
+# https://github.com/rjocoleman/capistrano-upload-config
+gem 'capistrano-upload-config'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
