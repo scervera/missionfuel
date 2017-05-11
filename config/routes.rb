@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     get 'ourboard', :on => :collection
     get 'bio', :on => :collection
   end
+
   match "ourboard" => "boardmembers#ourboard", via: :get
 
   resources :causes do
@@ -49,8 +50,8 @@ Rails.application.routes.draw do
   get 'pages/children'
   match "children" => "pages#children", via: :get
 
-  # get 'pages/contact'
-  # match "contact" => "pages#contact", via: :get
+  get 'pages/management'
+  match "management" => "pages#management", via: :get
 
   get 'pages/mailinglist'
   match "mailinglist" => "pages#mailinglist", via: :get

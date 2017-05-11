@@ -50,5 +50,10 @@ class PagesController < ApplicationController
     @page_title = "Caring for Children"
   end
 
+  def management
+    @breadcrumb_title = "What We Do"
+    @page_title = "Organizational Management Consulting"
+  end
+
   
 end
