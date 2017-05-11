@@ -6,13 +6,17 @@
   z-index: 1000;
 }
 
+.caption {
+	font-size: 12px;
+	font-style: italic;
+}
+
 @media screen and (max-width: 767px){
 
 	.helping-section .sc-section-heading p {
 	    width: 100%;
 	    margin: 0;
 	}
-
 }
 
 @media screen and (min-width: 769px){
@@ -21,7 +25,10 @@
 	    width: 80%;
 	    margin: 0;
 	}
-
+	caption {
+		font-size: 8px;
+		font-style: italics;
+	}
 }
 
 @media screen and (max-width: 320px) {
