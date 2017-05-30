@@ -36,12 +36,14 @@
                     <div class="single-description">
                         <div><%= raw @post.content %></div>                           
                     </div>
-                    <div class="meta-post">
-                      <% if current_user.id == @post.user.id %>
-                        <%= link_to 'Edit', edit_post_path(@post) %> | 
-                        <%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %>
-                      <% end %>
-                    </div>
+                    <% if user_signed_in? %>
+                        <div class="meta-post">
+                          <% if current_user.id == @post.user.id %>
+                            <%= link_to 'Edit', edit_post_path(@post) %> | 
+                            <%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %>
+                          <% end %>
+                        </div>
+                    <% end %>
                     <%= link_to "All Posts", posts_path, class: "btn-two" %>
                 </div>                         
             </div>

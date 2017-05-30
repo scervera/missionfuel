@@ -4,4 +4,7 @@ class Post < ApplicationRecord
 
   mount_uploader :poster_image, PosterImageUploader
   validates_presence_of :poster_image, presence: { message: "Must include a poster image." }
+
+  extend FriendlyId
+  friendly_id :title, use: :slugged
 end
