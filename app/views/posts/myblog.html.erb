@@ -1,0 +1,74 @@
+<section class="breadcrumb-section">
+    <div class="section-overlay">
+            <div class="container">
+                <div class="breadcrumb-area">
+                    <h2 class="breadcrumb-title">MISSION FUEL BLOG</h2>
+                    <ul class="breadcrumb-ul">
+                      <li><a href="/">Home</a></li>
+                      <li class="active-breadcrumb">Blog</li>
+                    </ul>
+                </div>
+            </div>            
+    </div>
+</section>
+<section class="section p-90 blog-list">
+    <div class="container">
+        <div class="row">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <% unless @posts.empty? %>
+                      <% @posts.each do |post| %>
+                        <div class="single-blog">
+                            <div class="single-blog-img">
+                                <%= link_to(image_tag(post.poster_image.url)) %>
+                            </div>
+                            <div class="blog-content-box">
+                                <div class="blog-post-date">
+                                  <span><%= post.created_at.strftime('%b %d, %Y') %></span>
+                                </div>
+                                <div class="blog-content">
+                                   <h4><%= link_to post.title %></h4>
+                                   
+                                    <div class="meta-post">
+                                        <span class="author">Post By: <%= post.user.first_name %> <%= post.user.last_name %></span>
+                                        <!-- <span><a href="#">8 Comments</a></span> -->
+                                        <!-- <span>12 likes</span> -->
+                                    </div>
+                                    <div class="exerpt">
+
+                                        <%= post.content.truncate(358).html_safe %>
+                                    </div>
+                                    <div class="meta-post">
+                                      <% if current_user.id == post.user.id %>
+                                        <%= link_to 'Show', post %> | 
+                                        <%= link_to 'Edit', edit_post_path(post) %> | 
+                                        <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+                                      <% end %>
+                                    </div>
+                                    <%= link_to "Read More", post_path(post), class: "btn-two" %>
+                                    <!-- <a href="blog_single.html" class="btn-two">Read More</a> -->
+                                </div>
+                            </div>
+                        </div>
+
+                      <% end %>
+                    <% else %>
+                        <p>There are no blog posts at this time.</p>
+                    <% end %>
+                    <!-- <div class="row">
+                        <div class="pagination-div">
+                            <ul class="pagination">
+                                <li class="disabled"><a href="#" aria-label="Previous"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#" class="pagination-dot-dot">...</a></li>
+                                <li><a href="#" aria-label="Next"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li> 
+                            </ul>
+                        </div>  
+                    </div>    -->                         
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  

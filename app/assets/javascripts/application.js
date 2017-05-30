@@ -38,6 +38,9 @@
 //= require navbar
 //= require lightcase
 //= require home.slider
+
+//= require ckeditor/init
+
 //= require modernizr-2.8.3.min
 
 

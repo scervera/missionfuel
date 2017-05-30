@@ -94,3 +94,5 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'touchpunch-rails'
 # https://github.com/geothird/touchpunch-rails
 gem 'jquery-ui-rails'
+# WYSIWYG editor for our blog
+gem 'ckeditor'

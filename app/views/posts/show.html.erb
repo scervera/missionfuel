@@ -1,0 +1,51 @@
+<section class="breadcrumb-section">
+    <div class="section-overlay">
+            <div class="container">
+                <div class="breadcrumb-area">
+                    <h2 class="breadcrumb-title">MISSION FUEL BLOG</h2>
+                    <ul class="breadcrumb-ul">
+                      <li><a href="/">Home</a></li>
+                      <li><a href="/posts">Blog</a></li>
+                      <li class="active-breadcrumb"><%= @post.title %></li>
+                    </ul>
+                </div>
+            </div>            
+    </div>
+</section>
+
+<section class="section p-90">
+  <div class="container">
+    <div class="row">
+        <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+                <div class="single-blog-page">
+                    <div class="single-blog-img">
+                        <%= image_tag(@post.poster_image.url) %>
+                    </div>
+                    <div class="blog-content-box">
+                        <div class="blog-post-date">
+                            <span><%= @post.created_at.strftime('%b %d, %Y') %></span>
+                        </div>
+                        <div class="blog-content">
+                           <h4><%= @post.title %></h4>
+                            <div class="meta-post">
+                                <span class="author">Post By: <%= @post.user.first_name %> <%= @post.user.last_name %></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-description">
+                        <div><%= raw @post.content %></div>                           
+                    </div>
+                    <div class="meta-post">
+                      <% if current_user.id == @post.user.id %>
+                        <%= link_to 'Edit', edit_post_path(@post) %> | 
+                        <%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %>
+                      <% end %>
+                    </div>
+                    <%= link_to "All Posts", posts_path, class: "btn-two" %>
+                </div>                         
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
