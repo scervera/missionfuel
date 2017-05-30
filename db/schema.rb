@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170506114248) do
+ActiveRecord::Schema.define(version: 20170529193853) do
+
+  create_table "blogs", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.integer  "user_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["user_id"], name: "index_blogs_on_user_id"
+  end
 
   create_table "boardmembers", force: :cascade do |t|
     t.string   "firstname"
@@ -30,6 +39,18 @@ ActiveRecord::Schema.define(version: 20170506114248) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.text     "description"
+  end
+
+  create_table "ckeditor_assets", force: :cascade do |t|
+    t.string   "data_file_name",               null: false
+    t.string   "data_content_type"
+    t.integer  "data_file_size"
+    t.string   "type",              limit: 30
+    t.integer  "width"
+    t.integer  "height"
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+    t.index ["type"], name: "index_ckeditor_assets_on_type"
   end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
@@ -54,6 +75,30 @@ ActiveRecord::Schema.define(version: 20170506114248) do
     t.index ["project_id"], name: "index_galleries_on_project_id"
   end
 
+  create_table "photos", force: :cascade do |t|
+    t.integer  "post_id"
+    t.string   "title"
+    t.text     "description"
+    t.boolean  "visible"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["post_id"], name: "index_photos_on_post_id"
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.integer  "blog_id"
+    t.string   "title"
+    t.text     "content"
+    t.date     "published_date"
+    t.boolean  "published"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.string   "poster_image"
+    t.integer  "user_id"
+    t.index ["blog_id"], name: "index_posts_on_blog_id"
+    t.index ["user_id"], name: "index_posts_on_user_id"
+  end
+
   create_table "projects", force: :cascade do |t|
     t.string   "name"
     t.integer  "cause_id"
@@ -76,6 +121,8 @@ ActiveRecord::Schema.define(version: 20170506114248) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "first_name"
+    t.string   "last_name"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

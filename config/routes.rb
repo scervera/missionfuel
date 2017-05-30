@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
 
-  
+  mount Ckeditor::Engine => '/ckeditor'
 
+
+  resources :posts do
+    get 'myblog', :on => :collection
+  end
+
+  resources :blogs
   resources :boardmembers do
     get 'ourboard', :on => :collection
     get 'bio', :on => :collection
@@ -56,7 +62,9 @@ Rails.application.routes.draw do
   get 'pages/mailinglist'
   match "mailinglist" => "pages#mailinglist", via: :get
 
-  devise_for :users
+  # modification of devise users model as per http://jacopretorius.net/2014/03/adding-custom-fields-to-your-devise-user-model-in-rails-4.html
+  devise_for :users, :controllers => { registrations: 'registrations' }
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   root to: "home#index"
