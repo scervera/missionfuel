@@ -5,16 +5,15 @@
   </head>
 
   <body>
-    
+
     <script>
       window.fbAsyncInit = function() {
         FB.init({
           appId      : '1787696097914236',
-          cookie     : true,
           xfbml      : true,
-          version    : 'v2.8'
+          version    : 'v2.9'
         });
-        FB.AppEvents.logPageView();   
+        FB.AppEvents.logPageView();
       };
 
       (function(d, s, id){
@@ -25,6 +24,7 @@
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
     </script>
+
   	<p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= render "/shared/navbar" %>
