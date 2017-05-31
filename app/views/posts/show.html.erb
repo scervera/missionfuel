@@ -31,11 +31,22 @@
                             <div class="meta-post">
                                 <span class="author">Post By: <%= @post.user.first_name %> <%= @post.user.last_name %></span>
                             </div>
+                            <div>
+                                <div
+                                  class="fb-like"
+                                  data-share="true"
+                                  data-width="450"
+                                  data-show-faces="true">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="single-description">
                         <div><%= raw @post.content %></div>                           
                     </div>
+
+
+
                     <% if user_signed_in? %>
                         <div class="meta-post">
                           <% if current_user.id == @post.user.id %>

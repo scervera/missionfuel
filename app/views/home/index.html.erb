@@ -81,14 +81,25 @@
                     </div>
                 </div>          
             </div>
-        </section>       
-    
-     
+        </section>
+   
 		<!-- Start Gallery Section -->
         <% unless @gallery.nil? %>
             <%= render "/shared/home_gallery" %>
         <% end %>   
 		<!-- End Gallery Section -->
+
+        <section>
+            <div>
+                <div
+                  class="fb-like"
+                  data-share="true"
+                  data-width="400"
+                  data-show-faces="false">
+                </div>
+            </div>
+        </section> 
+        </br>
  
 
 	 
