@@ -53,6 +53,7 @@ group :development do
   gem 'capistrano-secrets-yml', '~> 1.0.0'
   gem 'capistrano-rvm'
   gem 'capistrano-ssh-doctor', '~> 1.0'
+  gem "better_errors"
 end
 
 gem 'rvm1-capistrano3', require: false
