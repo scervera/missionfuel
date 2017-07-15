@@ -160,8 +160,11 @@
         padding: 38px 0;
         display: none;
     }
+
+    // SC - see how this is affecting other layouts
     #menu-fixed.clone {
-        top: -105px;
+        // top: -105px;
+        top: -225px;
     }
     .mainmenu-right {
         display: none;

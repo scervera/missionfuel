@@ -17,7 +17,7 @@
   <div class="form-group">
     <p>Note: Be sure to provide an image that will be displayed at the top of the post. Must be at least 770 x 440px.</p>
     <%= f.file_field :poster_image, label: "Poster Image" %>
-    <% if @post.poster_image %>
+    <% if @post.poster_image.present? %>
       <%= image_tag(@post.poster_image.url) %>
     <% end %>
   </div>
