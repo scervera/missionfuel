@@ -17,6 +17,9 @@
   <div class="form-group">
     <p>Note: Be sure to provide an image that will be displayed at the top of the post. Must be at least 770 x 440px.</p>
     <%= f.file_field :poster_image, label: "Poster Image" %>
+    <% if @post.poster_image %>
+      <%= image_tag(@post.poster_image.url) %>
+    <% end %>
   </div>
 
   <div class="form-group">
@@ -31,6 +34,7 @@
 
   <div class="form-group">
     <%= f.button :submit %>
+    <%= link_to "Cancel", posts_path %>
   </div>
 
 
