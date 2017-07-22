@@ -1,16 +1,22 @@
 
 /*=========max-width: 1199px==========*/
 
-@media screen and (max-width: 1199px){
-	
+@media screen and (max-width: 2400px){
+// @media screen and (max-width: 1199px){
     /* Header Top */
 
     .header-top-right ul li {
         margin-left: 13px;
     }
+    //SC removed
+    // body.down #menu-fixed.clone.mainmenu-area a.logo-menu img {
+    //     margin-right: 50px;
+    //     padding-top: 20px;
+    // }
     body.down #menu-fixed.clone.mainmenu-area a.logo-menu img {
-        margin-right: 50px;
-        padding-top: 20px;
+    width:40%;
+    margin-right: 99px;
+    padding-top: 15px;
     }
     #menu-fixed.clone .navbar-default .navbar-nav>li>a {
         font-size: 1em;
@@ -188,7 +194,7 @@
     }
     .navbar-nav>li {
         display: inline;
-        float: none;
+        float: left;
     }
     .navbar-nav>li>a {
         padding: 17px 23px;
@@ -200,7 +206,7 @@
     }  
     .mainmenu-area a.logo-menu img, body.down #menu-fixed.clone.mainmenu-area a.logo-menu img {
         float: none;
-        width: inherit;
+        width: 40%;
         padding-top: 5px;
         margin: 0;
     }
@@ -994,7 +1000,7 @@
 
 @media screen and (max-width: 480px) {
     .mainmenu-area a.logo-menu img {
-        width: 60%;
+        width: 50%;
     }
     .slider-content {
          top: 42%;
@@ -1117,7 +1123,7 @@
         font-size: 25px;
     }
     .mainmenu-area a.logo-menu img {
-        width: 93%;
+        width: 54%;
     }
     .helping-list ul li a {
         padding-right: 15px;
