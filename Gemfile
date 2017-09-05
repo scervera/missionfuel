@@ -97,3 +97,5 @@ gem 'touchpunch-rails'
 gem 'jquery-ui-rails'
 # WYSIWYG editor for our blog
 gem 'ckeditor'
+# braintree payments system 
+gem 'braintree'

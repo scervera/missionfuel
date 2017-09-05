@@ -8,7 +8,11 @@ class PagesController < ApplicationController
   end
 
   def board
+  end
 
+  def donate
+    @breadcrumb_title = "Donate"
+    @page_title = "Help Make a Difference"
   end
 
   def vision

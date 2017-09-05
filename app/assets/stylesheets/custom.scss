@@ -11,6 +11,32 @@
 	font-style: italic;
 }
 
+.donate input[type="submit"] {
+    font-size: 14px;
+    display: inline-block;
+    color: #000;
+    padding: 13px 19px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 1px;
+    outline: none;
+    border: 2px solid $primary-color;
+    background-color: #FFF;
+    transition: .3s;
+    box-shadow: inset 0px 0px 0px 0px $primary-color, inset 0px 0px 0px 0px $primary-color;
+}
+
+.donate:hover input[type="submit"] {
+	color: #000;
+    border: 2px solid $primary-color;
+    box-shadow: inset 6px 5px 27px 22px $primary-color, inset 1px 0px 0px 0px $primary-color;	
+}
+
+.center {
+	text-align: center;
+}
+
 @media screen and (max-width: 767px){
 
 	.helping-section .sc-section-heading p {
@@ -30,6 +56,8 @@
 		font-style: italics;
 	}
 }
+
+
 
 // @media screen and (max-width: 320px) {
 //     .mainmenu-area a.logo-menu img {

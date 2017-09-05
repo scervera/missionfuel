@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
+ 
   mount Ckeditor::Engine => '/ckeditor'
+
 
 
   resources :posts do
@@ -37,6 +39,9 @@ Rails.application.routes.draw do
 
   get 'pages/board'
   match "board" => "pages#board", via: :get
+
+  get 'pages/donate'
+  match "donate" => "pages#donate", via: :get
 
   get 'pages/helpingthepoor'
   match "helpingthepoor" => "pages#helpingthepoor", via: :get
