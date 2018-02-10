@@ -458,7 +458,43 @@
         overflow: hidden;
     }
     
+
+// SC - Edits here
+/* Cart Page */
+    .donation-table>tbody>tr>td.donation-product {
+        padding-left: 12px;
+    }
+    .donation-description {
+        width: 43%;
+    }
+    .donation-product {
+        width: 12%;
+    }
+    // .cart-product .cart-item-name {
+    //     padding: 30px 0 0 15px;
+    // }
+    // .coupon {
+    //     margin-bottom: 20px;
+    // }
+    // .cart-checkout {
+    //     float: left;
+    // }
+    // .calculate-shiping {
+    //     margin-bottom: 24px;
+    // }
+    // .project-list {
+    //     max-height: 450px;
+    // }
+    #map_canvas {
+        width: 520px;
+    }
+    .gallery-image {
+        overflow: hidden;
+    }
+    
 }
+
+// SC - End edits
 
 // SC - Edits here
 /*=========min-width: 768px==========*/

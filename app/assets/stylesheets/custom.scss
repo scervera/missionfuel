@@ -37,6 +37,114 @@
 	text-align: center;
 }
 
+// SC - Donation table taken from cart-table styles in style.scss
+.donation-table {
+	width: 100%;
+    border-right: 1px solid #F0F0F0;
+}
+.donation-table>thead {
+    background: $primary-color;
+    color: #000;
+    font-size: 20px;
+}
+.donation-table>thead >tr>th {
+    padding: 16px 0;
+    font-weight: 600;
+}
+.donation-table>thead >tr>th.donation-product {
+    padding-left: 30px;
+}
+.donation-table>thead >tr>th.donation-quantity {
+	padding-left: 28px;
+}
+.donation-table>tbody {
+    color: #333333;
+    font-size: 18px;
+	font-weight: 700;
+}
+.donation-table>tbody>tr {
+    border-bottom: 1px solid #F0F0F0;
+    border-left: 1px solid #F0F0F0;
+    border-right: 1px solid #F0F0F0;
+}
+.donation-table>tbody>tr>td {
+    padding: 30px 0;
+    color: #000;
+    font-weight: 400;
+}
+.donation-table>tbody>tr>td.donation-product  {
+	padding-left: 30px;
+}
+.donation-table>tbody>tr>td.donation-remove  {
+    text-align: right;
+    padding-right: 22px;
+}
+.donation-table>tbody>tr>td.donation-remove a {
+    text-decoration: none;
+    font-weight: 400;
+    width: 18px;
+    height: 18px;
+    background: #363636;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    line-height: 18px;
+    font-size: 14px;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
+.donation-table>tbody>tr>td.donation-remove a:hover {
+	background: $primary-color;
+}
+.donation-table>tbody>tr>td.donation-quantity {
+    color: #000;
+    font-size: 18px;
+}
+.donation-table>tbody>tr>td.donation-quantity .product-quantity input[type="submit"] {
+	font-weight: 400;
+	color: #000;
+}
+.donation-table>tbody>tr>td.donation-quantity .product-quantity input[type="submit"]:hover {
+	color: #fff;
+}
+.donation-product {
+    width: 25%;
+}
+.donation-product .donation-item-img {
+    float: left;
+}
+.donation-product .donation-item-name {
+    float: left;
+    padding: 30px 0 0 35px;
+}
+.donation-product .donation-item-name a {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-transition: .25s;
+    transition: .25s;
+}
+.donation-product .donation-item-name a:hover {
+	color: $primary-color;
+}
+.donation-price {
+	width: 15%;
+}
+.donation-quantity {
+	width: 25%;
+}
+.donation-total {
+	width: 15%;
+}
+.donation-remove {
+	width: 5%;
+}
+.donation-table>tbody>tr>td.cart-quantity .quantity {
+    color: #000;
+}
+
 @media screen and (max-width: 767px){
 
 	.helping-section .sc-section-heading p {
@@ -56,6 +164,7 @@
 		font-style: italics;
 	}
 }
+
 
 
 

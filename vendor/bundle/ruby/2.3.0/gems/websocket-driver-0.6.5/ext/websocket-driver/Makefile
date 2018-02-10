@@ -12,12 +12,12 @@ NULLCMD = :
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /Users/scervera/.rvm/rubies/ruby-2.3.4/include/ruby-2.3.0
+topdir = /Users/scervera/.rvm/rubies/ruby-2.3.3/include/ruby-2.3.0
 hdrdir = $(topdir)
-arch_hdrdir = /Users/scervera/.rvm/rubies/ruby-2.3.4/include/ruby-2.3.0/x86_64-darwin16
+arch_hdrdir = /Users/scervera/.rvm/rubies/ruby-2.3.3/include/ruby-2.3.0/x86_64-darwin17
 PATH_SEPARATOR = :
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
-prefix = $(DESTDIR)/Users/scervera/.rvm/rubies/ruby-2.3.4
+prefix = $(DESTDIR)/Users/scervera/.rvm/rubies/ruby-2.3.3
 rubysitearchprefix = $(rubylibprefix)/$(sitearch)
 rubyarchprefix = $(rubylibprefix)/$(arch)
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
@@ -31,8 +31,8 @@ rubyhdrdir = $(includedir)/$(RUBY_VERSION_NAME)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendordir = $(rubylibprefix)/vendor_ruby
-sitearchdir = $(DESTDIR)./.gem.20170826-2149-ossyuu
-sitelibdir = $(DESTDIR)./.gem.20170826-2149-ossyuu
+sitearchdir = $(DESTDIR)./.gem.20171209-2641-1r6ehm0
+sitelibdir = $(DESTDIR)./.gem.20171209-2641-1r6ehm0
 sitedir = $(rubylibprefix)/site_ruby
 rubyarchdir = $(rubylibdir)/$(arch)
 rubylibdir = $(rubylibprefix)/$(ruby_version)
@@ -101,7 +101,7 @@ RUBY_VERSION_NAME = $(RUBY_BASE_NAME)-$(ruby_version)
 RUBYW_BASE_NAME = rubyw
 RUBY_BASE_NAME = ruby
 
-arch = x86_64-darwin16
+arch = x86_64-darwin17
 sitearch = $(arch)
 ruby_version = 2.3.0
 ruby = $(bindir)/$(RUBY_BASE_NAME)
