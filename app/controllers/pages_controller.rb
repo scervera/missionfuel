@@ -59,5 +59,10 @@ class PagesController < ApplicationController
     @page_title = "Organizational Management Consulting"
   end
 
+  def thankyou
+    @breadcrumb_title = "Thank You"
+    @page_title = "You Are Making a Difference!"
+  end
+
   
 end

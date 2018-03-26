@@ -43,6 +43,9 @@ Rails.application.routes.draw do
   get 'pages/donate'
   match "donate" => "pages#donate", via: :get
 
+  get 'pages/thankyou'
+  match "thankyou" => "pages#thankyou", via: :get
+
   get 'pages/helpingthepoor'
   match "helpingthepoor" => "pages#helpingthepoor", via: :get
 
