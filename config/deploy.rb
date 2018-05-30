@@ -5,11 +5,7 @@ lock '>=3.3.5'
 set :application, 'missionfuel'
 
 set :repo_url, 'git@github.com:scervera/missionfuel.git'
-#set :repo_url, 'ssh://quark.cerveraweb.com/git/mdn2.git'
-#set :repo_url, 'ssh://quark.cerveraweb.com:/Library/Server/Xcode/Repositories/git/mdn2.git'
-#set :repo_url, 'https://adm1n:redeemed1@quark.cerveraweb.com:/Library/Server/Xcode/Repositories/git/mdn2.git'
-#set :git_https_username, 'adm1n'
-#set :git_https_password, 'redeemed1'
+
 set :ssh_options, { :forward_agent => true }
 #set :ssh_options, { :forward_agent => false }
 
@@ -41,7 +37,7 @@ set :use_sudo, false
 
 
 # Default value for :linked_files is []
-set :linked_files, %w{config/application.yml config/database.yml}
+set :linked_files, %w{config/application.yml}
 # set :linked_files, %w{config/application.yml, config/database.yml}
 
 # Default value for linked_dirs is []
