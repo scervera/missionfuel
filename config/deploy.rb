@@ -37,7 +37,7 @@ set :use_sudo, false
 
 
 # Default value for :linked_files is []
-set :linked_files, %w{config/application.yml}
+set :linked_files, %w{config/application.yml config/database.yml}
 # set :linked_files, %w{config/application.yml, config/database.yml}
 
 # Default value for linked_dirs is []

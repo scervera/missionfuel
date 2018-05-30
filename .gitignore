@@ -21,6 +21,8 @@
 .byebug_history
 config/secrets.yml
 /config/secrets.yml
+config/database.yml
+/config/database.yml
 #Ignore file uploads
 /public/system/*
 env_variables
