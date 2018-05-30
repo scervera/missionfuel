@@ -66,6 +66,9 @@ GEM
     capistrano-bundler (1.2.0)
       capistrano (~> 3.1)
       sshkit (~> 1.2)
+    capistrano-figaro-yml (1.0.5)
+      capistrano (~> 3.1)
+      sshkit (~> 1.2, >= 1.2.0)
     capistrano-rails (1.2.3)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
@@ -272,6 +275,7 @@ DEPENDENCIES
   braintree
   byebug
   capistrano (~> 3.6)
+  capistrano-figaro-yml (~> 1.0.2)
   capistrano-rails (~> 1.2)
   capistrano-rvm
   capistrano-secrets-yml (~> 1.0.0)
@@ -309,4 +313,4 @@ DEPENDENCIES
   will_paginate
 
 BUNDLED WITH
-   1.14.6
+   1.16.1

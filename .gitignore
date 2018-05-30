@@ -20,7 +20,7 @@
 # Ignore Byebug command history file.
 .byebug_history
 config/secrets.yml
-
+/config/secrets.yml
 #Ignore file uploads
 /public/system/*
 env_variables
@@ -29,7 +29,8 @@ env_variables
 
 # Ignore application configuration
 /config/application.yml
-/config/database.yml
+config/application.yml
+#/config/database.yml
 
 # Ignore template
 1heaven-hands-v1.0.0

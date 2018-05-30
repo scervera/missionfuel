@@ -18,7 +18,7 @@
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server 'www.cerveraweb.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
+server 'www.missionfuel.net', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/cervera_ziggy.pem"]
 # server 'cloud1.cerveraweb.com', user: 'deploy', roles: %w{web app db}, keys: ["#{ENV['HOME']}/.ssh/amazon_ec2_key.pem"]
 
 

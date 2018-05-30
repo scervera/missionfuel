@@ -8,6 +8,8 @@ require "capistrano/deploy"
 
 # Include capistrano-secrets-yml gem
 require 'capistrano/secrets_yml'
+# Include capistrano/figaro_yml gem
+require 'capistrano/figaro_yml'
 # Load the SCM plugin appropriate to your project:
 #
 # require "capistrano/scm/hg"
