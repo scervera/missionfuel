@@ -66,6 +66,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #######################
 # SC added Gems
+gem 'execjs' 
+gem 'therubyracer'
 # Create draggable, sortable lists. Read more: https://github.com/mixonic/ranked-model
 gem 'ranked-model'
 # Bootstrap SASS https://github.com/twbs/bootstrap-sass
