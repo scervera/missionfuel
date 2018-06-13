@@ -15,10 +15,10 @@ Gem::Specification.new do |s|
   s.files = ["Changelog.md".freeze, "LICENSE.txt".freeze, "README.md".freeze]
   s.homepage = "http://github.com/Mange/roadie-rails".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "2.6.11".freeze
+  s.rubygems_version = "2.6.14".freeze
   s.summary = "Making HTML emails comfortable for the Rails rockstars".freeze
 
-  s.installed_by_version = "2.6.11" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.6.14" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4

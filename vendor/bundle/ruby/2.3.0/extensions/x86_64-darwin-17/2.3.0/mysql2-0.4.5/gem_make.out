@@ -1,8 +1,5 @@
 current directory: /Users/scervera/rails_apps/missionfuel/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.5/ext/mysql2
-/Users/scervera/.rvm/rubies/ruby-2.3.3/bin/ruby -r ./siteconf20171209-2641-1nho0fq.rb extconf.rb
-Ignoring nokogiri-1.7.1 because its extensions are not built.  Try: gem pristine nokogiri --version 1.7.1
-Ignoring sqlite3-1.3.13 because its extensions are not built.  Try: gem pristine sqlite3 --version 1.3.13
-Ignoring websocket-driver-0.6.5 because its extensions are not built.  Try: gem pristine websocket-driver --version 0.6.5
+/Users/scervera/.rvm/rubies/ruby-2.3.4/bin/ruby -r ./siteconf20180612-24496-1g2hc49.rb extconf.rb
 checking for rb_absint_size()... yes
 checking for rb_absint_singlebit_p()... yes
 checking for ruby/thread.h... yes
@@ -39,4 +36,4 @@ linking shared-object mysql2/mysql2.bundle
 
 current directory: /Users/scervera/rails_apps/missionfuel/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.5/ext/mysql2
 make "DESTDIR=" install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 mysql2.bundle ./.gem.20171209-2641-f7mceo/mysql2
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 mysql2.bundle ./.gem.20180612-24496-fg63rm/mysql2

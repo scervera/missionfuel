@@ -13,10 +13,10 @@ Gem::Specification.new do |s|
   s.email = ["mpapis@gmail.com".freeze]
   s.homepage = "https://github.com/rvm/rvm1-capistrano3".freeze
   s.licenses = ["Apache 2".freeze]
-  s.rubygems_version = "2.6.11".freeze
+  s.rubygems_version = "2.6.14".freeze
   s.summary = "RVM 1.x / Capistrano 3.x Integration Gem".freeze
 
-  s.installed_by_version = "2.6.11" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.6.14" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4

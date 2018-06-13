@@ -15,10 +15,10 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 1.9.3".freeze)
   s.rubyforge_project = "friendly_id".freeze
-  s.rubygems_version = "2.6.11".freeze
+  s.rubygems_version = "2.6.14".freeze
   s.summary = "A comprehensive slugging and pretty-URL plugin.".freeze
 
-  s.installed_by_version = "2.6.11" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.6.14" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4

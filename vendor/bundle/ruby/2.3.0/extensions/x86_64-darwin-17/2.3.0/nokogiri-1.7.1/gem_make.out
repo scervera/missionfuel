@@ -1,6 +1,5 @@
 current directory: /Users/scervera/rails_apps/missionfuel/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.7.1/ext/nokogiri
-/Users/scervera/.rvm/rubies/ruby-2.3.3/bin/ruby -r ./siteconf20171209-2641-1ug46ru.rb extconf.rb --use-system-libraries=true --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/libxml2
-Ignoring websocket-driver-0.6.5 because its extensions are not built.  Try: gem pristine websocket-driver --version 0.6.5
+/Users/scervera/.rvm/rubies/ruby-2.3.4/bin/ruby -r ./siteconf20180612-24496-z26gwd.rb extconf.rb --use-system-libraries=true --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/libxml2
 checking if the C compiler accepts ... yes
 checking if the C compiler accepts -Wno-error=unused-command-line-argument-hard-error-in-future... no
 Building nokogiri using system libraries.
@@ -54,19 +53,19 @@ compiling xslt_stylesheet.c
 xslt_stylesheet.c:217:21: warning: incompatible pointer to integer conversion passing 'void *' to parameter of type 'VALUE' (aka 'unsigned long') [-Wint-conversion]
     Data_Get_Struct(ctxt->style->_private, nokogiriXsltStylesheetTuple,
                     ^~~~~~~~~~~~~~~~~~~~~
-/Users/scervera/.rvm/rubies/ruby-2.3.3/include/ruby-2.3.0/ruby/ruby.h:1201:41: note: expanded from macro 'Data_Get_Struct'
+/Users/scervera/.rvm/rubies/ruby-2.3.4/include/ruby-2.3.0/ruby/ruby.h:1201:41: note: expanded from macro 'Data_Get_Struct'
     ((sval) = (type*)rb_data_object_get(obj))
                                         ^~~
-/Users/scervera/.rvm/rubies/ruby-2.3.3/include/ruby-2.3.0/ruby/ruby.h:1393:26: note: passing argument to parameter 'obj' here
+/Users/scervera/.rvm/rubies/ruby-2.3.4/include/ruby-2.3.0/ruby/ruby.h:1393:26: note: passing argument to parameter 'obj' here
 rb_data_object_get(VALUE obj)
                          ^
 xslt_stylesheet.c:230:21: warning: incompatible pointer to integer conversion passing 'void *' to parameter of type 'VALUE' (aka 'unsigned long') [-Wint-conversion]
     Data_Get_Struct(ctxt->style->_private, nokogiriXsltStylesheetTuple,
                     ^~~~~~~~~~~~~~~~~~~~~
-/Users/scervera/.rvm/rubies/ruby-2.3.3/include/ruby-2.3.0/ruby/ruby.h:1201:41: note: expanded from macro 'Data_Get_Struct'
+/Users/scervera/.rvm/rubies/ruby-2.3.4/include/ruby-2.3.0/ruby/ruby.h:1201:41: note: expanded from macro 'Data_Get_Struct'
     ((sval) = (type*)rb_data_object_get(obj))
                                         ^~~
-/Users/scervera/.rvm/rubies/ruby-2.3.3/include/ruby-2.3.0/ruby/ruby.h:1393:26: note: passing argument to parameter 'obj' here
+/Users/scervera/.rvm/rubies/ruby-2.3.4/include/ruby-2.3.0/ruby/ruby.h:1393:26: note: passing argument to parameter 'obj' here
 rb_data_object_get(VALUE obj)
                          ^
 2 warnings generated.
@@ -124,10 +123,9 @@ xml_document.c:535:26: warning: cast from 'const char *' to 'unsigned char *' dr
 2 warnings generated.
 compiling xml_cdata.c
 linking shared-object nokogiri/nokogiri.bundle
-Ignoring websocket-driver-0.6.5 because its extensions are not built.  Try: gem pristine websocket-driver --version 0.6.5
 Cleaning files only used during build.
 rm -rf /Users/scervera/rails_apps/missionfuel/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.7.1/ports/archives
 
 current directory: /Users/scervera/rails_apps/missionfuel/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.7.1/ext/nokogiri
 make "DESTDIR=" install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 nokogiri.bundle ./.gem.20171209-2641-1cl5rrd/nokogiri
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 nokogiri.bundle ./.gem.20180612-24496-12z6fqe/nokogiri

@@ -1,5 +1,5 @@
 current directory: /Users/scervera/rails_apps/missionfuel/vendor/bundle/ruby/2.3.0/gems/therubyracer-0.12.3/ext/v8
-/Users/scervera/.rvm/rubies/ruby-2.3.3/bin/ruby -r ./siteconf20180610-2868-zak7rv.rb extconf.rb
+/Users/scervera/.rvm/rubies/ruby-2.3.4/bin/ruby -r ./siteconf20180612-24496-x2bzk9.rb extconf.rb
 checking for main() in -lpthread... yes
 checking for main() in -lobjc... yes
 creating Makefile
@@ -83,4 +83,4 @@ linking shared-object v8/init.bundle
 
 current directory: /Users/scervera/rails_apps/missionfuel/vendor/bundle/ruby/2.3.0/gems/therubyracer-0.12.3/ext/v8
 make "DESTDIR=" install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 init.bundle ./.gem.20180610-2868-5jxx47/v8
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 init.bundle ./.gem.20180612-24496-ew9dym/v8

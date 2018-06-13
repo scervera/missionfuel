@@ -12,10 +12,10 @@ Gem::Specification.new do |s|
   s.description = "Simple asset gem containing jquery mobile ui touch punch. This allows for enabling touch drag and drop for jquery sortable.".freeze
   s.email = ["geo.marshall@gmail.com".freeze]
   s.homepage = "".freeze
-  s.rubygems_version = "2.6.11".freeze
+  s.rubygems_version = "2.6.14".freeze
   s.summary = "Simple asset gem containing jquery mobile ui touch punch.".freeze
 
-  s.installed_by_version = "2.6.11" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.6.14" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4

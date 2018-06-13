@@ -12,10 +12,10 @@ Gem::Specification.new do |s|
   s.description = "Capistrano tasks for automating `secrets.yml` file handling for Rails 4+ apps.\nThis plugins syncs contents of your local secrets file and copies that to\nthe remote server.\n".freeze
   s.email = ["bruno.sutic@gmail.com".freeze]
   s.homepage = "https://github.com/capistrano-plugins/capistrano-secrets-yml".freeze
-  s.rubygems_version = "2.6.11".freeze
+  s.rubygems_version = "2.6.14".freeze
   s.summary = "Capistrano tasks for automating `secrets.yml` file handling for Rails 4+ apps.".freeze
 
-  s.installed_by_version = "2.6.11" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.6.14" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4

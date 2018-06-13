@@ -13,10 +13,10 @@ Gem::Specification.new do |s|
   s.email = ["lee.hambley@gmail.com".freeze, "seenmyfate@gmail.com".freeze]
   s.homepage = "http://github.com/capistrano/sshkit".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "2.6.11".freeze
+  s.rubygems_version = "2.6.14".freeze
   s.summary = "SSHKit makes it easy to write structured, testable SSH commands in Ruby".freeze
 
-  s.installed_by_version = "2.6.11" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.6.14" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
