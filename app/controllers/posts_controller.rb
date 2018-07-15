@@ -9,7 +9,7 @@ class PostsController < ApplicationController
   end
 
   def myblog
-    @posts = Post.where(user_id: current_user.id)
+    @posts = Post.where(user_id: current_user.id).order('created_at DESC')
   end
 
   # GET /posts/1
