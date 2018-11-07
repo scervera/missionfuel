@@ -20,6 +20,11 @@ class PagesController < ApplicationController
     @page_title = "Help Make a Difference"
   end
 
+  def christmas2018
+    @breadcrumb_title = "Donate"
+    @page_title = "Christmas for Children 2018"
+  end
+
   def vision
   	@breadcrumb_title = "About Us"
   	@page_title = "Vision and Mission"
