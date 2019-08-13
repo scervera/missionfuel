@@ -17,12 +17,25 @@
 
                             <div class="description-content">
                                  <div class="single-description">
-                                    <script src="https://donorbox.org/widget.js" paypalExpress="false"></script><iframe src="https://donorbox.org/embed/stage-2-booster?amount=35&show_content=true&recurring=true&hide_donation_meter=true" height="685px" width="100%"
-        style="max-width:100%; min-width:100%; max-height:none!important" seamless="seamless" name="donorbox" frameborder="0" scrolling="no" allowpaymentrequest></iframe>
-                    
+                                    <div class="row">
+                                        <div class="col-md-4 col-xs-12 float_left">
+                                            <p>Mission Fuel exists to promote and support the cause of the brave and hard working men and women overseas who are dedicated to compassion towards the poor and evangelizing the truth of Jesus Christ to the those with broken spirits. Please consider supporting and promoting our work. </p>
 
+                                            <p class="special-quation">"Whoever is generous to the poor lends to the LORD, and he will repay him for his deed." Proverbs 19:17</p>
+
+                                            <p><span style="font-weight: bold;">Regular support</span> is essential for us to <span style="font-weight: bold;">build budgets</span> that allow us to provide support that our missionaries and overseas workers can count on to provide compassionate aid, build sustainable programs, and conduct impactful ministry in the name of Jesus Christ. Please consider supporting us with <a href="https://missionfuel.networkforgood.com/projects/79075-general-support-for-mission-fuel-s-work"><span style="font-weight: bold;">small, regular donations</span></a> that can be automatically sent monthly.</p>
+
+                                            <p style="text-align: center;"><%= render "/shared/donation" %></p>
+
+                                            <p>Mission Fuel Inc. is a 501(c)3 non-profit organization EIN 82-1103717. Your donation is tax deductible. A receipt will be emailed to the address you provide. Please retain this for your records.</p>
+                                        </div>
+                                        <div class="col-md-8 col-xs-12 float_left">
+                                            <%= link_to(image_tag("photos/donation_hero.jpg", target: 'blank'), "https://missionfuel.networkforgood.com/projects/79075-general-support-for-mission-fuel-s-work") %>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <div style="font-size: 10px;">Note: If you have previously donated using our donorbox.org donor management system, you may access your account to make any changes here: <a href="https://donorbox.org">https://donorbox.org</a></div></br>
                         </div>
                     </div>
                 </div>
@@ -36,7 +49,6 @@ TrustLogo("https://www.missionfuel.net/comodo_secure_seal_76x26_transp.png", "CL
 
     </div>
 </section>
-
 
 
 

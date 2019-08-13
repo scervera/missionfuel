@@ -54,6 +54,7 @@ group :development do
   gem 'capistrano-rvm'
   gem 'capistrano-ssh-doctor', '~> 1.0'
   gem 'capistrano-figaro-yml', '~> 1.0.2'
+  gem 'capistrano-database-yml'
   gem "better_errors"
 end
 
@@ -79,7 +80,7 @@ gem "font-awesome-rails"
 # https://github.com/plataformatec/devise
 gem 'devise'
 gem 'pundit'
-gem "mini_magick"
+gem 'mini_magick', '~> 4.9.4'
 gem 'will_paginate'
 # http://simple-form.plataformatec.com.br
 gem 'simple_form'

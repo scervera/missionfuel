@@ -10,6 +10,10 @@ require "capistrano/deploy"
 require 'capistrano/secrets_yml'
 # Include capistrano/figaro_yml gem
 require 'capistrano/figaro_yml'
+
+# Include https://github.com/potsbo/capistrano-database-yml gem
+# create database.yml file on the remote server by executing this task: bundle exec cap production setup
+require 'capistrano/database_yml'
 # Load the SCM plugin appropriate to your project:
 #
 # require "capistrano/scm/hg"
