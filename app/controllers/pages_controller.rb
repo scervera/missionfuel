@@ -69,5 +69,9 @@ class PagesController < ApplicationController
     @page_title = "You Are Making a Difference!"
   end
 
+  def slumhope
+    @breadcrumb_title = "Slum Hope"
+    @page_title = "There Is Hope Even In The Slums"
+  end
   
 end

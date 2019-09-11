@@ -76,6 +76,9 @@ Rails.application.routes.draw do
   get 'pages/missiontrip2019'
   match "missiontrip2019" => "pages#missiontrip2019", via: :get
 
+  get 'pages/slumhope'
+  match "slumhope" => "pages#slumhope", via: :get
+
   # modification of devise users model as per http://jacopretorius.net/2014/03/adding-custom-fields-to-your-devise-user-model-in-rails-4.html
   devise_for :users, :controllers => { registrations: 'registrations' }
 
